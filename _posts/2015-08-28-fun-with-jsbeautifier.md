@@ -126,7 +126,7 @@ or "public stuff" when executed elsewhere, give it a go by going to [example.com
 
 By harnessing jsb's nature, we can "deobfuscate" it into just the "private stuff", removing everything else.
 
-We can even take it a step further and pack it once more, resulting with:
+We can take it a step further and pack it again, resulting with:
 
 {% highlight js linenos %}
 eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('c(d(2){7 6.5=="4.8"?2[0]:2[1]}(\'"b 3"|"a 3"\'.9(\'|\')))',14,14,'||arr|stuff|example|domain|document|return|com|split|public|private|eval|function'.split('|'),0,{}))
