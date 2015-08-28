@@ -30,7 +30,7 @@ However, if you'll read its description closely, you'll see that it's more than 
 
 ## Unpacking? deobfuscating?
 
-before we go any further, here are the two definition, taking straight from wikipedia:
+before we go any further, here are the two definition, taken straight from wikipedia:
 
 ### Packing
 > * Reducing the redundancy in the script (by removing comments, white space and shorten variable and functions names). This does not alter the behavior of the script.
@@ -54,7 +54,7 @@ It can take a JS input, let's say the above, and turn it into something like thi
 eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('2 1=["6","5","7","b"];2 4=3(0){a"8 "+0};1.9(3(0){4(0)});',12,12,'name|names|var|function|greet|jane|john|george|hello|forEach|return|jene'.split('|'),0,{}))
 {% endhighlight %}
 
-The magic happens when you'll take the code above, and place it inside jsb:
+The magic happens when you'll take this code, and place it inside jsb:
 
 {% highlight js linenos %}
 var names = ["john", "jane", "george", "jene"];
