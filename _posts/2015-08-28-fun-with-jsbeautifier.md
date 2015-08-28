@@ -69,7 +69,7 @@ names.forEach(function(name) {
 
 Violla! completely reversed. 
 
-## But how does this work?
+## But how does it work?
 Like i've mentioned earlier, jsb will use all sorts of detections in order to identify one of the packers/obfuscators it supports.
 It will then use its own unpacking methods to reverse the process, some are as simple as evaluating the script.
 
@@ -106,7 +106,7 @@ if we'll put it inside jsb, we'll get a simple, yet a very interesting response:
 undefined
 {% endhighlight %}
 
-it basically gives us  the output of the only function there, let's try another:
+it basically returns the output of the only function there; let's try another:
 
 {% highlight js linenos %}
 eval(function() { return "dude"}(''.split('|')))
@@ -122,11 +122,11 @@ eval(function(arr){ return document.domain == "example.com" ? arr[0] : arr[1] }(
 {% endhighlight %}
 
 Looking only at the function, we can see that it will return "private stuff" when executed under example.com,
-or "public stuff" when executed elsewhere, give it a go by going to [example.com](example.com), opening the console and executing the code above.
+or "public stuff" when executed elsewhere, give it a go by going to [example.com](example.com), opening the console and executing it.
 
-By harnesing jsb's nature, we can "deobfuscate" it into just the "private stuff", removing everything else.
+By harnessing jsb's nature, we can "deobfuscate" it into just the "private stuff", removing everything else.
 
-We can even take it a step further and packing it once more, resulting with:
+We can even take it a step further and pack it once more, resulting with:
 
 {% highlight js linenos %}
 eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('c(d(2){7 6.5=="4.8"?2[0]:2[1]}(\'"b 3"|"a 3"\'.9(\'|\')))',14,14,'||arr|stuff|example|domain|document|return|com|split|public|private|eval|function'.split('|'),0,{}))
