@@ -5,6 +5,7 @@ subtitle: a better way to hide your code *
 permalink: 2015-08-28-fun-with-js-beautifier
 date:   2015-08-28
 categories: jsbeautifier deobfuscation packing javascript 
+comments: true
 ---
 
 We all know [jsbeautifier](http://jsbeautifier.org) and its friendly feature of making this:
@@ -138,3 +139,19 @@ I personally might hide a message for someone who not only uses tools, but also 
 
 
 \* This is fun, but far from secure.
+
+<% if comments %>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'bsilicakes';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<% endif %>
