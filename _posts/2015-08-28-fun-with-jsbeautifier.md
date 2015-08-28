@@ -140,7 +140,7 @@ I personally might hide a message for someone who not only uses tools, but also 
 
 \* This is fun, but far from secure.
 
-<% if comments %>
+{% if comments %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -154,4 +154,4 @@ I personally might hide a message for someone who not only uses tools, but also 
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-<% endif %>
+{% endif %}
