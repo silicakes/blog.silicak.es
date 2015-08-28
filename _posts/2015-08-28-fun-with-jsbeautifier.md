@@ -140,7 +140,7 @@ I personally might hide a message for someone who not only uses tools, but also 
 
 \* This is fun, but far from secure.
 
-{% if comments %}
+{% if page.comments %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
