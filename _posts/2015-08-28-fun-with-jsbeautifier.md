@@ -2,7 +2,7 @@
 layout: post
 title:  "Fun with jsbeautifier"
 subtitle: a better way to hide your code *
-permalink: fun-with-js-beautifier
+permalink: 2015-08-28-fun-with-js-beautifier
 date:   2015-08-28
 categories: jsbeautifier deobfuscation packing javascript 
 ---
