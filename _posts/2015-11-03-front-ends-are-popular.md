@@ -15,7 +15,7 @@ As a front-end developer, my linkedIn profile gets more than a handful of job, w
 along with people asking me as to whether I know anyone around my sphere.
 
 Since FEDs are generally rare, and I honestly don't know any senior ones who are out there, looking,
-add some spare time I had - this is now the official comment I'm replying:
+add some spare time I had - this is now the official comment I'm replying with:
 
 > In around 2008 , demand for front-end skills soared and the amount of FE talent leaving small companies in favor of large conglomerates rose to levels not seen since the C++ tide, in the start of the century. Most of the front-end developers were taken by large sums of money and over 80% of all the raw talent was recruited by entities, called 'startups'.
 
