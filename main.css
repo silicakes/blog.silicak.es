@@ -27,16 +27,15 @@ body {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 /* line 31, _sass/_base.scss */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
 ul, ol, dl, figure {
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 /**
  * Images
  */
-/* line 43, _sass/_base.scss */
+/* line 42, _sass/_base.scss */
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -45,12 +44,12 @@ img {
 /**
  * Figures
  */
-/* line 53, _sass/_base.scss */
+/* line 52, _sass/_base.scss */
 figure > img {
   display: block;
 }
 
-/* line 57, _sass/_base.scss */
+/* line 56, _sass/_base.scss */
 figcaption {
   font-size: 14px;
 }
@@ -58,12 +57,12 @@ figcaption {
 /**
  * Lists
  */
-/* line 66, _sass/_base.scss */
+/* line 65, _sass/_base.scss */
 ul, ol {
   margin-left: 30px;
 }
 
-/* line 71, _sass/_base.scss */
+/* line 70, _sass/_base.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -72,7 +71,7 @@ li > ol {
 /**
  * Headings
  */
-/* line 82, _sass/_base.scss */
+/* line 81, _sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
@@ -80,16 +79,16 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
-/* line 91, _sass/_base.scss */
+/* line 90, _sass/_base.scss */
 a {
   color: #2a7ae2;
   text-decoration: none;
 }
-/* line 95, _sass/_base.scss */
+/* line 94, _sass/_base.scss */
 a:visited {
   color: #1756a9;
 }
-/* line 99, _sass/_base.scss */
+/* line 98, _sass/_base.scss */
 a:hover {
   color: #111;
   text-decoration: underline;
@@ -98,7 +97,7 @@ a:hover {
 /**
  * Blockquotes
  */
-/* line 110, _sass/_base.scss */
+/* line 109, _sass/_base.scss */
 blockquote {
   color: #828282;
   border-left: 4px solid #e8e8e8;
@@ -107,7 +106,7 @@ blockquote {
   letter-spacing: -1px;
   font-style: italic;
 }
-/* line 118, _sass/_base.scss */
+/* line 117, _sass/_base.scss */
 blockquote > :last-child {
   margin-bottom: 0;
 }
@@ -115,7 +114,7 @@ blockquote > :last-child {
 /**
  * Code formatting
  */
-/* line 128, _sass/_base.scss */
+/* line 127, _sass/_base.scss */
 pre,
 code {
   font-size: 15px;
@@ -123,17 +122,17 @@ code {
   border-radius: 3px;
 }
 
-/* line 135, _sass/_base.scss */
+/* line 134, _sass/_base.scss */
 code {
   padding: 1px 5px;
 }
 
-/* line 139, _sass/_base.scss */
+/* line 138, _sass/_base.scss */
 pre {
   padding: 8px 12px;
   overflow-x: scroll;
 }
-/* line 143, _sass/_base.scss */
+/* line 142, _sass/_base.scss */
 pre > code {
   border: 0;
   padding-right: 0;
@@ -143,7 +142,7 @@ pre > code {
 /**
  * Wrapper
  */
-/* line 155, _sass/_base.scss */
+/* line 154, _sass/_base.scss */
 .wrapper {
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
@@ -153,7 +152,7 @@ pre > code {
   padding-left: 30px;
 }
 @media screen and (max-width: 800px) {
-  /* line 155, _sass/_base.scss */
+  /* line 154, _sass/_base.scss */
   .wrapper {
     max-width: -webkit-calc(800px - (30px));
     max-width: calc(800px - (30px));
@@ -165,7 +164,7 @@ pre > code {
 /**
  * Clearfix
  */
-/* line 179, _sass/_base.scss */
+/* line 178, _sass/_base.scss */
 .wrapper:after, .footer-col-wrapper:after {
   content: "";
   display: table;
@@ -175,14 +174,14 @@ pre > code {
 /**
  * Icons
  */
-/* line 193, _sass/_base.scss */
+/* line 192, _sass/_base.scss */
 .icon > svg {
   display: inline-block;
   width: 16px;
   height: 16px;
   vertical-align: middle;
 }
-/* line 199, _sass/_base.scss */
+/* line 198, _sass/_base.scss */
 .icon > svg path {
   fill: #828282;
 }
@@ -413,31 +412,41 @@ pre > code {
   margin-bottom: 30px;
 }
 /* line 213, _sass/_layout.scss */
-.post-content h2 {
-  font-size: 32px;
+.post-content h1 {
+  font-size: 35px;
 }
 @media screen and (max-width: 800px) {
   /* line 213, _sass/_layout.scss */
+  .post-content h1 {
+    font-size: 30px;
+  }
+}
+/* line 221, _sass/_layout.scss */
+.post-content h2 {
+  font-size: 30px;
+}
+@media screen and (max-width: 800px) {
+  /* line 221, _sass/_layout.scss */
   .post-content h2 {
     font-size: 28px;
   }
 }
-/* line 221, _sass/_layout.scss */
+/* line 229, _sass/_layout.scss */
 .post-content h3 {
-  font-size: 26px;
+  font-size: 25px;
 }
 @media screen and (max-width: 800px) {
-  /* line 221, _sass/_layout.scss */
+  /* line 229, _sass/_layout.scss */
   .post-content h3 {
     font-size: 22px;
   }
 }
-/* line 229, _sass/_layout.scss */
+/* line 237, _sass/_layout.scss */
 .post-content h4 {
   font-size: 20px;
 }
 @media screen and (max-width: 800px) {
-  /* line 229, _sass/_layout.scss */
+  /* line 237, _sass/_layout.scss */
   .post-content h4 {
     font-size: 18px;
   }

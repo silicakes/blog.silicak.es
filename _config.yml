@@ -1,6 +1,6 @@
 # Site settings
 title: silicak.es
-email: iam@silicak.es
+#email: iam@silicak.es
 description: > # this means to ignore newlines until "baseurl:"
   A blog about code, philosophy, music and the world of front-end development
 baseurl: "" # the subpath of your site, e.g. /blog/
