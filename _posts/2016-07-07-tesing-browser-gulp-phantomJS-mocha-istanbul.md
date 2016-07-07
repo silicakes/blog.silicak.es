@@ -11,7 +11,7 @@ If you just want to review the files, you can go [here](#practice)
 
 ## Introduction
 
-Testing is an integral part of every stable code base, it allows us to track various dependencies, without a deep familiarization with the code,
+Testing is an integral part of every stable code base. It allows us to track various dependencies, without a deep familiarization with the code,
 it enables new developers to take risks, it gives us the chance to understand the maturity of a product and also create better and more scalable applications,
 by forcing ourselves to go 'design first', in methodologies such as test driven development.
 
